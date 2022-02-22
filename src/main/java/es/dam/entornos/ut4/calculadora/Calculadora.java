@@ -8,7 +8,7 @@ public class Calculadora {
         double a,b,res;
         Operacion op = null;
         Scanner sc = new Scanner(System.in);
-        while(opcion != 5) {          
+        while(opcion != 7) {          
             System.out.println("Introduce la operación (1: suma, 2: resta, 3: muliplica, 4: divide");        
             opcion = sc.nextInt();
             
@@ -53,12 +53,14 @@ public class Calculadora {
                       System.out.println("Introduce el valor para el radio");
                       a = sc.nextDouble();
                       res = 3.14 * a * a;
-                      System.out.println("El área de la circunferencia es: " + res);    
+                      System.out.println("El área de la circunferencia es: " + res); 
+                      break;
                 case 6: //longitud de la circunferencia
                       System.out.println("Introduce el valor para el radio");
                       double r = sc.nextDouble();
                       res = 2 * 3.14 * r;
-                      System.out.println("la longitud de la circunferencia es: " + res);    
+                      System.out.println("la longitud de la circunferencia es: " + res);   
+                      break;
                 case 7: //Salir
                     System.out.println("Salir");                    
                     break;
